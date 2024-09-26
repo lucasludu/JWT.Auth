@@ -1,0 +1,56 @@
+﻿@using System.Security.Claims
+@inherits LayoutComponentBase
+
+<MudThemeProvider/>
+<MudPopoverProvider/>
+<MudDialogProvider/>
+<MudSnackbarProvider/>
+
+<MudLayout>
+    <MudAppBar Color="Color.Primary">
+        <MudLink 
+            Href="/"
+            Color="Color.Inherit"
+            Underline="Underline.None"
+        >JWT Auth Demo</MudLink>
+        <MudSpacer />
+
+        <AuthorizeView>
+            <Authorized>
+                <span>@UserDisplayName(context.User.Claims.ToList())</span>
+            </Authorized>
+            <NotAuthorized>
+                <MudLink 
+                    Href="/login"
+                    Color="Color.Inherit"
+                    Underline="Underline.None"
+                    Class="mr-2"
+                >Login</MudLink>
+                <MudLink 
+                    Href="/registration"
+                    Color="Color.Inherit"
+                    Underline="Underline.None"
+                >Registration</MudLink>
+            </NotAuthorized>
+        </AuthorizeView>
+
+    </MudAppBar>
+    <MudMainContent>
+        @Body
+    </MudMainContent>
+</MudLayout>
+
+
+@code {
+    private string UserDisplayName(List<Claim> claims)
+    {
+        var firstName = claims.Where(_ => _.Type == "FirstName").Select(_ => _.Value).FirstOrDefault();
+        var lastName = claims.Where(_ => _.Type == "LastName").Select(_ => _.Value).FirstOrDefault();
+        if (!string.IsNullOrEmpty(firstName) || !string.IsNullOrEmpty(lastName))
+        {
+            return $"{firstName}  {lastName}";
+        }
+        var email = claims.Where(_ => _.Type == "Email").Select(_ => _.Value).FirstOrDefault();
+        return email;
+    }
+}

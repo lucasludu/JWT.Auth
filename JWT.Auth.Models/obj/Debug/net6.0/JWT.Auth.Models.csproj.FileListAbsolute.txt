@@ -1,0 +1,11 @@
+C:\Users\Usuario\source\repos\JWT.Auth\JWT.Auth.Models\bin\Debug\net6.0\JWT.Auth.Models.deps.json
+C:\Users\Usuario\source\repos\JWT.Auth\JWT.Auth.Models\bin\Debug\net6.0\JWT.Auth.Models.dll
+C:\Users\Usuario\source\repos\JWT.Auth\JWT.Auth.Models\bin\Debug\net6.0\JWT.Auth.Models.pdb
+C:\Users\Usuario\source\repos\JWT.Auth\JWT.Auth.Models\obj\Debug\net6.0\JWT.Auth.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\source\repos\JWT.Auth\JWT.Auth.Models\obj\Debug\net6.0\JWT.Auth.Models.AssemblyInfoInputs.cache
+C:\Users\Usuario\source\repos\JWT.Auth\JWT.Auth.Models\obj\Debug\net6.0\JWT.Auth.Models.AssemblyInfo.cs
+C:\Users\Usuario\source\repos\JWT.Auth\JWT.Auth.Models\obj\Debug\net6.0\JWT.Auth.Models.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\JWT.Auth\JWT.Auth.Models\obj\Debug\net6.0\JWT.Auth.Models.dll
+C:\Users\Usuario\source\repos\JWT.Auth\JWT.Auth.Models\obj\Debug\net6.0\refint\JWT.Auth.Models.dll
+C:\Users\Usuario\source\repos\JWT.Auth\JWT.Auth.Models\obj\Debug\net6.0\JWT.Auth.Models.pdb
+C:\Users\Usuario\source\repos\JWT.Auth\JWT.Auth.Models\obj\Debug\net6.0\ref\JWT.Auth.Models.dll

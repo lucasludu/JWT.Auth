@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\JWT.Auth.BlazorUI.props" />
+</Project>

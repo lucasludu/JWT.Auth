@@ -1,0 +1,114 @@
+﻿@page "/registration"
+@using System.Text.Json
+@using System.Text
+@using System.Net
+@inject HttpClient _http
+@inject NavigationManager _navigationManager
+
+<div class="ma-6 d-flex justify-center">
+    <MudChip>
+        <h3>User Registration Form</h3>
+    </MudChip>
+</div>
+
+<div class="ma-6 d-flex justify-center">
+    <MudCard Width="500px">
+        <MudForm 
+            Model="registrationVM" 
+            Validation="registrationValidateVM.ValidateValue" 
+            @ref="form"
+        >
+            <MudCardContent>
+
+                @if(!string.IsNullOrEmpty(ApiErrorMessage))
+                {
+                    <MudChip Class="d-flex justify-center" Color="Color.Error">
+                        <p>@ApiErrorMessage</p>
+                    </MudChip>
+                }
+
+                <MudTextField @bind-Value="registrationVM.FirstName"
+                              For="@(() => registrationVM.FirstName)"
+                              Immediate="true"
+                              Label="First Name" />
+                <MudTextField @bind-Value="registrationVM.LastName"
+                              For="@(() => registrationVM.LastName)"
+                              Immediate="true"
+                              Label="Last Name" />
+                <MudTextField @bind-Value="registrationVM.Email"
+                              For="@(() => registrationVM.Email)"
+                              Immediate="true"
+                              Label="Email" />
+                <MudTextField @bind-Value="registrationVM.Password"
+                              For="@(() => registrationVM.Password)"
+                              Immediate="true"
+                              InputType="InputType.Password"
+                              Label="Password" />
+                <MudTextField @bind-Value="registrationVM.ConfirmPassword"
+                              For="@(() => registrationVM.ConfirmPassword)"
+                              Immediate="true"
+                              InputType="InputType.Password"
+                              Label="Confirm Password" />
+            </MudCardContent>
+
+            <MudCardActions>
+                <MudButton 
+                    Variant="Variant.Filled" 
+                    Color="Color.Primary" 
+                    Class="ml-auto" 
+                    OnClick="RegisterAsync"
+                >Register</MudButton>
+            </MudCardActions>
+        </MudForm>
+    </MudCard>
+</div>
+
+@code {
+    RegistrationVM registrationVM = new RegistrationVM();
+    RegistrationValidationVM registrationValidateVM;
+    MudForm form;
+    string ApiErrorMessage;
+
+    protected override Task OnInitializedAsync()
+    {
+        registrationValidateVM = new RegistrationValidationVM(_http);
+        return base.OnInitializedAsync();
+    }
+
+    private async Task RegisterAsync()
+    {
+        await form.Validate();
+
+        if(form.IsValid)
+        {
+            var jsonPlayLoad = JsonSerializer.Serialize(registrationVM);
+            var requestContent = new StringContent(jsonPlayLoad, Encoding.UTF8, "application/json");
+
+            var response = await _http.PostAsync("api/User/register", requestContent);
+
+            if(response.StatusCode == HttpStatusCode.BadRequest)
+            {
+                var errors = await response.Content.ReadFromJsonAsync<Dictionary<string, List<string>>>();
+
+                if(errors?.Count > 0)
+                {
+                    foreach(var item in errors)
+                    {
+                        foreach(var errorMessage in item.Value)
+                        {
+                            ApiErrorMessage = $"{ApiErrorMessage} | {errorMessage}";
+                        }
+                    }
+                }
+            }
+            else if (response.StatusCode == HttpStatusCode.OK) 
+            {
+                _navigationManager.NavigateTo("/registration-confirmation");
+            }
+            else
+            {
+                ApiErrorMessage = "Failed to register the user, please try after some time";
+            }
+        }
+    }
+}

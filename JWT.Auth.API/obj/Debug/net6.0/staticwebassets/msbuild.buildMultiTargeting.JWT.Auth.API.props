@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\JWT.Auth.API.props" />
+</Project>

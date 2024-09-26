@@ -1,0 +1,17 @@
+C:\Users\Usuario\source\repos\JWT.Auth\JWT.Auth.Data\bin\Debug\net6.0\JWT.Auth.Data.deps.json
+C:\Users\Usuario\source\repos\JWT.Auth\JWT.Auth.Data\bin\Debug\net6.0\JWT.Auth.Data.dll
+C:\Users\Usuario\source\repos\JWT.Auth\JWT.Auth.Data\bin\Debug\net6.0\JWT.Auth.Data.pdb
+C:\Users\Usuario\source\repos\JWT.Auth\JWT.Auth.Data\bin\Debug\net6.0\JWT.Auth.Models.dll
+C:\Users\Usuario\source\repos\JWT.Auth\JWT.Auth.Data\bin\Debug\net6.0\JWT.Auth.Models.pdb
+C:\Users\Usuario\source\repos\JWT.Auth\JWT.Auth.Data\obj\Debug\net6.0\JWT.Auth.Data.csproj.AssemblyReference.cache
+C:\Users\Usuario\source\repos\JWT.Auth\JWT.Auth.Data\obj\Debug\net6.0\JWT.Auth.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\source\repos\JWT.Auth\JWT.Auth.Data\obj\Debug\net6.0\JWT.Auth.Data.AssemblyInfoInputs.cache
+C:\Users\Usuario\source\repos\JWT.Auth\JWT.Auth.Data\obj\Debug\net6.0\JWT.Auth.Data.AssemblyInfo.cs
+C:\Users\Usuario\source\repos\JWT.Auth\JWT.Auth.Data\obj\Debug\net6.0\JWT.Auth.Data.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\JWT.Auth\JWT.Auth.Data\obj\Debug\net6.0\JWT.Auth.CD22EE1A.Up2Date
+C:\Users\Usuario\source\repos\JWT.Auth\JWT.Auth.Data\obj\Debug\net6.0\JWT.Auth.Data.dll
+C:\Users\Usuario\source\repos\JWT.Auth\JWT.Auth.Data\obj\Debug\net6.0\refint\JWT.Auth.Data.dll
+C:\Users\Usuario\source\repos\JWT.Auth\JWT.Auth.Data\obj\Debug\net6.0\JWT.Auth.Data.pdb
+C:\Users\Usuario\source\repos\JWT.Auth\JWT.Auth.Data\obj\Debug\net6.0\ref\JWT.Auth.Data.dll
+C:\Users\Usuario\source\repos\JWT.Auth\JWT.Auth.Data\bin\Debug\net6.0\JWT.Auth.Data.runtimeconfig.json
+C:\Users\Usuario\source\repos\JWT.Auth\JWT.Auth.Data\obj\Debug\net6.0\JWT.Auth.Data.genruntimeconfig.cache
