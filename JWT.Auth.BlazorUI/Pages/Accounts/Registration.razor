@@ -2,7 +2,8 @@
 @using System.Text.Json
 @using System.Text
 @using System.Net
-@inject HttpClient _http
+@* @inject HttpClient _http *@
+@inject IHttpClientFactory _httpClientFactory
 @inject NavigationManager _navigationManager
 
 <div class="ma-6 d-flex justify-center">
@@ -64,15 +65,25 @@
 </div>
 
 @code {
+    [CascadingParameter]
+    public Task<AuthenticationState> AuthState { get; set; }
+
     RegistrationVM registrationVM = new RegistrationVM();
     RegistrationValidationVM registrationValidateVM;
     MudForm form;
     string ApiErrorMessage;
 
-    protected override Task OnInitializedAsync()
+    protected override async Task OnInitializedAsync()
     {
-        registrationValidateVM = new RegistrationValidationVM(_http);
-        return base.OnInitializedAsync();
+        var user = (await AuthState).User;
+        if(user.Identity.IsAuthenticated)
+        {
+            _navigationManager.NavigateTo("/");
+        }
+
+        var httpClient = _httpClientFactory.CreateClient("Dot6Api");
+        registrationValidateVM = new RegistrationValidationVM(httpClient);
+        await base.OnInitializedAsync();
     }
 
     private async Task RegisterAsync()
@@ -84,7 +95,8 @@
             var jsonPlayLoad = JsonSerializer.Serialize(registrationVM);
             var requestContent = new StringContent(jsonPlayLoad, Encoding.UTF8, "application/json");
 
-            var response = await _http.PostAsync("api/User/register", requestContent);
+            var httpClient = _httpClientFactory.CreateClient("Dot6Api");
+            var response = await httpClient.PostAsync("api/User/register", requestContent);
 
             if(response.StatusCode == HttpStatusCode.BadRequest)
             {

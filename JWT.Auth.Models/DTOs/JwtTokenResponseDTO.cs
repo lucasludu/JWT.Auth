@@ -9,5 +9,6 @@ namespace JWT.Auth.Models.DTOs
     public class JwtTokenResponseDTO
     {
         public string AccessToken { get; set; }
+        public string RefreshToken { get; set; }
     }
 }

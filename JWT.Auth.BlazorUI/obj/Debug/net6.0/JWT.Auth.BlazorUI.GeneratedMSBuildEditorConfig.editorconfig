@@ -38,6 +38,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudHNcUmVnaXN0cmF0aW9uQ29uZmlybWF0aW9uLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Usuario/source/repos/JWT.Auth/JWT.Auth.BlazorUI/Pages/Cars/CarList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2Fyc1xDYXJMaXN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Usuario/source/repos/JWT.Auth/JWT.Auth.BlazorUI/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
@@ -48,6 +52,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Usuario/source/repos/JWT.Auth/JWT.Auth.BlazorUI/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario/source/repos/JWT.Auth/JWT.Auth.BlazorUI/Shared/RedirectToLogin.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFJlZGlyZWN0VG9Mb2dpbi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Usuario/source/repos/JWT.Auth/JWT.Auth.BlazorUI/Shared/SurveyPrompt.razor]

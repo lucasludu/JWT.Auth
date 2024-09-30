@@ -15,3 +15,4 @@ C:\Users\Usuario\source\repos\JWT.Auth\JWT.Auth.Services\obj\Debug\net6.0\JWT.Au
 C:\Users\Usuario\source\repos\JWT.Auth\JWT.Auth.Services\obj\Debug\net6.0\refint\JWT.Auth.Services.dll
 C:\Users\Usuario\source\repos\JWT.Auth\JWT.Auth.Services\obj\Debug\net6.0\JWT.Auth.Services.pdb
 C:\Users\Usuario\source\repos\JWT.Auth\JWT.Auth.Services\obj\Debug\net6.0\ref\JWT.Auth.Services.dll
+C:\Users\Usuario\source\repos\JWT.Auth\JWT.Auth.Services\obj\Debug\net6.0\JWT.Auth.Services.sourcelink.json

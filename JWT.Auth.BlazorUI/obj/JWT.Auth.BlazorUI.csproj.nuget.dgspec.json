@@ -71,6 +71,10 @@
               "target": "Package",
               "version": "[6.0.32, )"
             },
+            "Microsoft.Extensions.Http": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
             "Microsoft.NET.ILLink.Analyzers": {
               "suppressParent": "All",
               "target": "Package",

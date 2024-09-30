@@ -9,3 +9,4 @@ C:\Users\Usuario\source\repos\JWT.Auth\JWT.Auth.Models\obj\Debug\net6.0\JWT.Auth
 C:\Users\Usuario\source\repos\JWT.Auth\JWT.Auth.Models\obj\Debug\net6.0\refint\JWT.Auth.Models.dll
 C:\Users\Usuario\source\repos\JWT.Auth\JWT.Auth.Models\obj\Debug\net6.0\JWT.Auth.Models.pdb
 C:\Users\Usuario\source\repos\JWT.Auth\JWT.Auth.Models\obj\Debug\net6.0\ref\JWT.Auth.Models.dll
+C:\Users\Usuario\source\repos\JWT.Auth\JWT.Auth.Models\obj\Debug\net6.0\JWT.Auth.Models.sourcelink.json

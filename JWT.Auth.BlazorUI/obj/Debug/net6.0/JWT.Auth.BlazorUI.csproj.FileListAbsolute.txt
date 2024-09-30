@@ -841,3 +841,8 @@ C:\Users\Usuario\source\repos\JWT.Auth\JWT.Auth.BlazorUI\obj\Debug\net6.0\compre
 C:\Users\Usuario\source\repos\JWT.Auth\JWT.Auth.BlazorUI\obj\Debug\net6.0\compressed\knr5f6q3k8.gz
 C:\Users\Usuario\source\repos\JWT.Auth\JWT.Auth.BlazorUI\obj\Debug\net6.0\compressed\tnjfmt23n2.gz
 C:\Users\Usuario\source\repos\JWT.Auth\JWT.Auth.BlazorUI\obj\Debug\net6.0\compressed\w6flrb49ke.gz
+C:\Users\Usuario\source\repos\JWT.Auth\JWT.Auth.BlazorUI\obj\Debug\net6.0\JWT.Auth.BlazorUI.sourcelink.json
+C:\Users\Usuario\source\repos\JWT.Auth\JWT.Auth.BlazorUI\bin\Debug\net6.0\wwwroot\_framework\Microsoft.Extensions.Http.dll
+C:\Users\Usuario\source\repos\JWT.Auth\JWT.Auth.BlazorUI\bin\Debug\net6.0\wwwroot\_framework\Microsoft.Extensions.Http.dll.gz
+C:\Users\Usuario\source\repos\JWT.Auth\JWT.Auth.BlazorUI\bin\Debug\net6.0\Microsoft.Extensions.Http.dll
+C:\Users\Usuario\source\repos\JWT.Auth\JWT.Auth.BlazorUI\obj\Debug\net6.0\compressed\lwce73vyx0.gz

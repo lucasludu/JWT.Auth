@@ -15,3 +15,4 @@ C:\Users\Usuario\source\repos\JWT.Auth\JWT.Auth.Data\obj\Debug\net6.0\JWT.Auth.D
 C:\Users\Usuario\source\repos\JWT.Auth\JWT.Auth.Data\obj\Debug\net6.0\ref\JWT.Auth.Data.dll
 C:\Users\Usuario\source\repos\JWT.Auth\JWT.Auth.Data\bin\Debug\net6.0\JWT.Auth.Data.runtimeconfig.json
 C:\Users\Usuario\source\repos\JWT.Auth\JWT.Auth.Data\obj\Debug\net6.0\JWT.Auth.Data.genruntimeconfig.cache
+C:\Users\Usuario\source\repos\JWT.Auth\JWT.Auth.Data\obj\Debug\net6.0\JWT.Auth.Data.sourcelink.json

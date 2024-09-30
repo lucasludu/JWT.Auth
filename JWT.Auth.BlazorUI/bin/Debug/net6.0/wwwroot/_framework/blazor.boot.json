@@ -1,7 +1,7 @@
 {
   "entryAssembly": "JWT.Auth.BlazorUI",
   "resources": {
-    "hash": "sha256-fKcwuXGyINt6jJtfSrs5kjBOEeJy4/Ov9Z6WkXLRH/c=",
+    "hash": "sha256-fke+B7SpriUksHeB1NQeMCzMoNupCerfu2bsW7Fj9hc=",
     "runtime": {
       "dotnet.6.0.33.n1ge42gier.js": "sha256-3qQapGQ76xXOm4Dpi23h4jVNXH1bTJXQIuoMVyT5rnU=",
       "dotnet.timezones.blat": "sha256-P+/t9PCEv/9QsJggxMNw2wdb6fNvy1O6Es0UqrFfIPQ=",
@@ -30,6 +30,7 @@
       "Microsoft.Extensions.FileProviders.Abstractions.dll": "sha256-7PzvEcQvpK1c8tTX9VPI8AF+XrekqbAytNBQXJjvTvQ=",
       "Microsoft.Extensions.FileProviders.Physical.dll": "sha256-sXujvGMZDgBBZ9HqfcEq9XsM0pvwyhPt60NA9qLDzGI=",
       "Microsoft.Extensions.FileSystemGlobbing.dll": "sha256-viiXOG0fwhWobT0TQ1ZOJiZBdRvYRlWbDtjz+6d8sQI=",
+      "Microsoft.Extensions.Http.dll": "sha256-K5/O91dt69IHKav69ftn+7DKPmnzkipTvwM4Sd4Zres=",
       "Microsoft.Extensions.Localization.dll": "sha256-d17Z/v44ZgpVf61cVhKnK5re5gZK9shNk1K8rVU2tbs=",
       "Microsoft.Extensions.Localization.Abstractions.dll": "sha256-oVfkhmNK7IQG98kAu+fl2IT+YnWF7vUvdsxGqEz42y8=",
       "Microsoft.Extensions.Logging.dll": "sha256-GDZQCBtVHfrZZ6fL95lGoinLeUWLjQShLbfESwO7mrc=",
@@ -206,10 +207,10 @@
       "mscorlib.dll": "sha256-B9j0sYk80myYI4rWEvcGR3X307RSTBIwNZyYmqssN/g=",
       "netstandard.dll": "sha256-OA2B0VuineNCslrp0x3+8GHIKIgroIXq3QAppg304/0=",
       "System.Private.CoreLib.dll": "sha256-5B68cmtop3I9GS2JqJJBZQG3XP0L8yLNq+EREukp2Zk=",
-      "JWT.Auth.BlazorUI.dll": "sha256-y+1dEeBFnDXhx8mDZkNa/XE6258B0JYEZs3hoWcu0Sw="
+      "JWT.Auth.BlazorUI.dll": "sha256-i1uiErABYbqrS/FvmGAYvtk4MZxmMxD3FdW6U3+5LSI="
     },
     "pdb": {
-      "JWT.Auth.BlazorUI.pdb": "sha256-x+D/ekSdYrZ8Q5LeYFlsTGR8wZ7/AQs08JGMW6oKm8I="
+      "JWT.Auth.BlazorUI.pdb": "sha256-M+bUwif6iKzABQkhhQ0Ritcr96AN438HRfz6c95TGFc="
     },
     "runtimeAssets": {
       "dotnet.wasm": {

@@ -1,0 +1,60 @@
+﻿@page "/car-list"
+
+@using JWT.Auth.BlazorUI.ViewModels
+@using Microsoft.AspNetCore.Authorization
+
+@inject IHttpClientFactory _httpClientFactory
+@inject ILocalStorageService _localStorageService
+
+@attribute [Authorize]
+
+
+@if (Elements == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <MudTable Items="@Elements" LoadingProgressColor="Color.Info">
+        <HeaderContent>
+            <MudTh>Marca</MudTh>
+            <MudTh>Modelo</MudTh>
+            <MudTh>Fecha Modelo</MudTh>
+        </HeaderContent>
+        <RowTemplate>
+            <MudTd DataLabel="Marca">@context.Marca</MudTd>
+            <MudTd DataLabel="Modelo">@context.Modelo</MudTd>
+            <MudTd DataLabel="FechaModelo">@context.FechaModelo</MudTd>
+        </RowTemplate>
+    </MudTable>
+}
+
+@code {
+
+    private List<Car> Elements = new List<Car>();
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            var token = await _localStorageService.GetItemAsync<string>("jwt-access-token");
+
+            if (!string.IsNullOrEmpty(token))
+            {
+                var httpClient = _httpClientFactory.CreateClient("Dot6Api");
+                Elements = await httpClient.GetFromJsonAsync<List<Car>>("api/car/cars");
+            }
+            else
+            {
+                Console.WriteLine("No JWT token found, cannot make authorized request.");
+            }
+        }
+        catch (Exception ex)
+        {
+            var error = ex.Message;
+            Console.WriteLine($"Error occurred: {error}");
+        }
+    }
+
+}

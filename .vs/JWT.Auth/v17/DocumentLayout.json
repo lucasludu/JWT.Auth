@@ -1,44 +1,15 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Usuario\\source\\repos\\JWT.Auth\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{9F0E1819-AF6B-4BE4-A4A7-8477B5EC30B2}|JWT.Auth.BlazorUI\\JWT.Auth.BlazorUI.csproj|c:\\users\\usuario\\source\\repos\\jwt.auth\\jwt.auth.blazorui\\shared\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9F0E1819-AF6B-4BE4-A4A7-8477B5EC30B2}|JWT.Auth.BlazorUI\\JWT.Auth.BlazorUI.csproj|solutionrelative:jwt.auth.blazorui\\shared\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F0E1819-AF6B-4BE4-A4A7-8477B5EC30B2}|JWT.Auth.BlazorUI\\JWT.Auth.BlazorUI.csproj|c:\\users\\usuario\\source\\repos\\jwt.auth\\jwt.auth.blazorui\\pages\\accounts\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9F0E1819-AF6B-4BE4-A4A7-8477B5EC30B2}|JWT.Auth.BlazorUI\\JWT.Auth.BlazorUI.csproj|solutionrelative:jwt.auth.blazorui\\pages\\accounts\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F0E1819-AF6B-4BE4-A4A7-8477B5EC30B2}|JWT.Auth.BlazorUI\\JWT.Auth.BlazorUI.csproj|c:\\users\\usuario\\source\\repos\\jwt.auth\\jwt.auth.blazorui\\shared\\providers\\customauthprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F0E1819-AF6B-4BE4-A4A7-8477B5EC30B2}|JWT.Auth.BlazorUI\\JWT.Auth.BlazorUI.csproj|solutionrelative:jwt.auth.blazorui\\shared\\providers\\customauthprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F0E1819-AF6B-4BE4-A4A7-8477B5EC30B2}|JWT.Auth.BlazorUI\\JWT.Auth.BlazorUI.csproj|c:\\users\\usuario\\source\\repos\\jwt.auth\\jwt.auth.blazorui\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9F0E1819-AF6B-4BE4-A4A7-8477B5EC30B2}|JWT.Auth.BlazorUI\\JWT.Auth.BlazorUI.csproj|solutionrelative:jwt.auth.blazorui\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F0E1819-AF6B-4BE4-A4A7-8477B5EC30B2}|JWT.Auth.BlazorUI\\JWT.Auth.BlazorUI.csproj|c:\\users\\usuario\\source\\repos\\jwt.auth\\jwt.auth.blazorui\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9F0E1819-AF6B-4BE4-A4A7-8477B5EC30B2}|JWT.Auth.BlazorUI\\JWT.Auth.BlazorUI.csproj|solutionrelative:jwt.auth.blazorui\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F0E1819-AF6B-4BE4-A4A7-8477B5EC30B2}|JWT.Auth.BlazorUI\\JWT.Auth.BlazorUI.csproj|c:\\users\\usuario\\source\\repos\\jwt.auth\\jwt.auth.blazorui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F0E1819-AF6B-4BE4-A4A7-8477B5EC30B2}|JWT.Auth.BlazorUI\\JWT.Auth.BlazorUI.csproj|solutionrelative:jwt.auth.blazorui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F0E1819-AF6B-4BE4-A4A7-8477B5EC30B2}|JWT.Auth.BlazorUI\\JWT.Auth.BlazorUI.csproj|c:\\users\\usuario\\source\\repos\\jwt.auth\\jwt.auth.blazorui\\pages\\accounts\\registration.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9F0E1819-AF6B-4BE4-A4A7-8477B5EC30B2}|JWT.Auth.BlazorUI\\JWT.Auth.BlazorUI.csproj|solutionrelative:jwt.auth.blazorui\\pages\\accounts\\registration.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "DockedWidth": 185,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -55,97 +26,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainLayout.razor",
-              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\JWT.Auth\\JWT.Auth.BlazorUI\\Shared\\MainLayout.razor",
-              "RelativeDocumentMoniker": "JWT.Auth.BlazorUI\\Shared\\MainLayout.razor",
-              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\JWT.Auth\\JWT.Auth.BlazorUI\\Shared\\MainLayout.razor",
-              "RelativeToolTip": "JWT.Auth.BlazorUI\\Shared\\MainLayout.razor",
-              "ViewState": "AQIAACQAAAAAAAAAAAAAACYAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-26T20:52:22.657Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "App.razor",
-              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\JWT.Auth\\JWT.Auth.BlazorUI\\App.razor",
-              "RelativeDocumentMoniker": "JWT.Auth.BlazorUI\\App.razor",
-              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\JWT.Auth\\JWT.Auth.BlazorUI\\App.razor",
-              "RelativeToolTip": "JWT.Auth.BlazorUI\\App.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-26T19:54:19.135Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "_Imports.razor",
-              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\JWT.Auth\\JWT.Auth.BlazorUI\\_Imports.razor",
-              "RelativeDocumentMoniker": "JWT.Auth.BlazorUI\\_Imports.razor",
-              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\JWT.Auth\\JWT.Auth.BlazorUI\\_Imports.razor",
-              "RelativeToolTip": "JWT.Auth.BlazorUI\\_Imports.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA6AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-26T19:53:46.784Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\JWT.Auth\\JWT.Auth.BlazorUI\\Program.cs",
-              "RelativeDocumentMoniker": "JWT.Auth.BlazorUI\\Program.cs",
-              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\JWT.Auth\\JWT.Auth.BlazorUI\\Program.cs",
-              "RelativeToolTip": "JWT.Auth.BlazorUI\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-26T19:52:12.95Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CustomAuthProvider.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\JWT.Auth\\JWT.Auth.BlazorUI\\Shared\\Providers\\CustomAuthProvider.cs",
-              "RelativeDocumentMoniker": "JWT.Auth.BlazorUI\\Shared\\Providers\\CustomAuthProvider.cs",
-              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\JWT.Auth\\JWT.Auth.BlazorUI\\Shared\\Providers\\CustomAuthProvider.cs",
-              "RelativeToolTip": "JWT.Auth.BlazorUI\\Shared\\Providers\\CustomAuthProvider.cs",
-              "ViewState": "AQIAABoAAADAmZmZmZkpwDUAAABKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-26T19:42:54.822Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Registration.razor",
-              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\JWT.Auth\\JWT.Auth.BlazorUI\\Pages\\Accounts\\Registration.razor",
-              "RelativeDocumentMoniker": "JWT.Auth.BlazorUI\\Pages\\Accounts\\Registration.razor",
-              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\JWT.Auth\\JWT.Auth.BlazorUI\\Pages\\Accounts\\Registration.razor",
-              "RelativeToolTip": "JWT.Auth.BlazorUI\\Pages\\Accounts\\Registration.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-26T16:00:26.012Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Login.razor",
-              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\JWT.Auth\\JWT.Auth.BlazorUI\\Pages\\Accounts\\Login.razor",
-              "RelativeDocumentMoniker": "JWT.Auth.BlazorUI\\Pages\\Accounts\\Login.razor",
-              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\JWT.Auth\\JWT.Auth.BlazorUI\\Pages\\Accounts\\Login.razor",
-              "RelativeToolTip": "JWT.Auth.BlazorUI\\Pages\\Accounts\\Login.razor",
-              "ViewState": "AQIAACYAAACAMzMzMzMbwF4AAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-26T14:18:53.322Z",
-              "EditorCaption": ""
             }
           ]
         }

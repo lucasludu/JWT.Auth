@@ -13,6 +13,17 @@
             Color="Color.Inherit"
             Underline="Underline.None"
         >JWT Auth Demo</MudLink>
+        <AuthorizeView>
+            <Authorized>
+                <MudLink 
+                    Color="Color.Inherit" 
+                    Underline="Underline.None" 
+                    Class="ml-2" 
+                    Href="/car-list"
+                >Lista de Autos</MudLink>
+            </Authorized>
+        </AuthorizeView>
+
         <MudSpacer />
 
         <AuthorizeView>

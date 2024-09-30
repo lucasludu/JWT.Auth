@@ -3,7 +3,7 @@
 @using System.Text
 @using System.Net
 @using JWT.Auth.BlazorUI.Shared.Providers
-@inject HttpClient _http
+@inject IHttpClientFactory _httpClientFactory
 @inject NavigationManager _navigationManager
 @inject ILocalStorageService _localStorageService
 @inject AuthenticationStateProvider _authenticationStateProvider
@@ -53,10 +53,23 @@
 </div>
 
 @code {
+    [CascadingParameter]
+    public Task<AuthenticationState> AuthState { get; set; }
+
     LoginVM loginVM = new LoginVM();
     LoginValidationVM loginValidator = new LoginValidationVM();
     MudForm form;
     string ApiErrorMessage;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var user = (await AuthState).User;
+        if(user.Identity.IsAuthenticated)
+        {
+            _navigationManager.NavigateTo("/");
+        }
+        await base.OnInitializedAsync();
+    }
 
     private async Task LoginAsync()
     {
@@ -64,10 +77,13 @@
 
         if(form.IsValid)
         {
-            var jsonPlayLoad = JsonSerializer.Serialize(loginVM);
-            var requestContent = new StringContent(jsonPlayLoad, Encoding.UTF8, "application/json");
+            var jsonPayload = JsonSerializer.Serialize(loginVM);
+            var requestContent = new StringContent(jsonPayload, Encoding.UTF8, "application/json");
+            var httpClient = _httpClientFactory.CreateClient("Dot6Api");
+            var response = await httpClient.PostAsync("api/User/login", requestContent);
 
-            var response = await _http.PostAsync("api/User/login", requestContent);
+            var responseContent = await response.Content.ReadAsStringAsync();
+            Console.WriteLine(responseContent);
 
             if (response.StatusCode == HttpStatusCode.BadRequest)
             {
@@ -87,7 +103,9 @@
             {
                 var tokenResponse = await response.Content.ReadFromJsonAsync<JwtTokenResponseVM>();
                 await _localStorageService.SetItemAsync<string>("jwt-access-token", tokenResponse.AccessToken);
+                await _localStorageService.SetItemAsync<string>("refresh-token", tokenResponse.RefreshToken);
                 (_authenticationStateProvider as CustomAuthProvider).NotifyAuthState();
+                _navigationManager.NavigateTo("/car-list");
             }
             else
             {

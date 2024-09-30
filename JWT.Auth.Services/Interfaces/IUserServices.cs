@@ -11,6 +11,7 @@ namespace JWT.Auth.Services.Interfaces
     {
         Task<(bool IsUserRegistered, string message)> RegisterNewUserAsync(UserRegisterDTO userRegisterDTO);
         bool CheckUserUniqueEmail(string email);
-        Task<(bool IsLoginSuccess, JwtTokenResponseDTO TokenResponse)> LoginAsync(LoginDTO dto); 
+        Task<(bool IsLoginSuccess, JwtTokenResponseDTO TokenResponse)> LoginAsync(LoginDTO dto);
+        Task<(string ErrorMessage, JwtTokenResponseDTO jwtTokenResponse)> RenewTokenAsync(RenewTokenRequestDTO renewTokenRequestDTO);
     }
 }

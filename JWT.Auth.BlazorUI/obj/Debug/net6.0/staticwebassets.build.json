@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "FgWt1gP+YCtj3A58NsuI3ida5MQjVyKyWWF9DBf6iqs=",
+  "Hash": "bR46PhxGaslpLq5EQMo31YZl2jZf72LtgoshsImRW2w=",
   "Source": "JWT.Auth.BlazorUI",
   "BasePath": "/",
   "Mode": "Root",
@@ -623,6 +623,25 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\6.0.0\\lib\\net6.0\\Microsoft.Extensions.FileSystemGlobbing.dll"
+    },
+    {
+      "Identity": "C:\\Users\\Usuario\\source\\repos\\JWT.Auth\\JWT.Auth.BlazorUI\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Http.dll",
+      "SourceId": "JWT.Auth.BlazorUI",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\Usuario\\source\\repos\\JWT.Auth\\JWT.Auth.BlazorUI\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Http.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "WasmResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.extensions.http\\6.0.0\\lib\\netstandard2.0\\Microsoft.Extensions.Http.dll"
     },
     {
       "Identity": "C:\\Users\\Usuario\\source\\repos\\JWT.Auth\\JWT.Auth.BlazorUI\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Localization.Abstractions.dll",
@@ -6285,6 +6304,25 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Usuario\\source\\repos\\JWT.Auth\\JWT.Auth.BlazorUI\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.FileSystemGlobbing.dll"
+    },
+    {
+      "Identity": "C:\\Users\\Usuario\\source\\repos\\JWT.Auth\\JWT.Auth.BlazorUI\\obj\\Debug\\net6.0\\compressed\\lwce73vyx0.gz",
+      "SourceId": "JWT.Auth.BlazorUI",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\Usuario\\source\\repos\\JWT.Auth\\JWT.Auth.BlazorUI\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Http.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\Usuario\\source\\repos\\JWT.Auth\\JWT.Auth.BlazorUI\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Http.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Usuario\\source\\repos\\JWT.Auth\\JWT.Auth.BlazorUI\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Http.dll"
     },
     {
       "Identity": "C:\\Users\\Usuario\\source\\repos\\JWT.Auth\\JWT.Auth.BlazorUI\\obj\\Debug\\net6.0\\compressed\\mfonqkfdzq.gz",

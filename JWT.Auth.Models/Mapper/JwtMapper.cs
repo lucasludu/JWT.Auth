@@ -19,5 +19,25 @@ namespace JWT.Auth.Models.Mapper
                 Password = dto.Password
             };
         }
+
+        public static CarDTO FromCarToCarDto(Car car)
+        {
+            return new CarDTO()
+            {
+                Marca = car.Marca,
+                Modelo = car.Modelo,
+                FechaModelo = car.FechaModelo
+            };
+        }
+
+        public static List<CarDTO> FromListCarToListCarDto(List<Car> cars)
+        {
+            var listaCarsDTO = new List<CarDTO>();
+            foreach (var car in cars)
+            {
+                listaCarsDTO.Add(new CarDTO(car.Marca, car.Modelo, car.FechaModelo));
+            }
+            return listaCarsDTO;
+        }
     }
 }

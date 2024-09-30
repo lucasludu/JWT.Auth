@@ -100,7 +100,7 @@ namespace JWT.Auth.Services
             var securityToken = new JwtSecurityToken(
                     issuer: _tokenSettings.Issuer,
                     audience: _tokenSettings.Audience,
-                    expires: DateTime.Now.AddMinutes(30),
+                    expires: DateTime.Now.AddMinutes(1),
                     signingCredentials: credentials,
                     claims: _claims
                 );
@@ -132,12 +132,67 @@ namespace JWT.Auth.Services
             }
 
             var jwtAccessToken = this.GenerateJwtToken(user);
+            var refreshToken = await this.GenerateRefreshToken(user.Id);
 
             var result = new JwtTokenResponseDTO
             {
                 AccessToken = jwtAccessToken,
+                RefreshToken = refreshToken
             };
             return (true, result); 
+        }
+
+        private async Task<string> GenerateRefreshToken(int userId)
+        {
+            byte[] bytesOfToken = new byte[32];
+
+            using (var rng = RandomNumberGenerator.Create())
+            {
+                rng.GetBytes(bytesOfToken);
+            }
+
+            var token = Convert.ToBase64String(bytesOfToken);
+
+            var newRefreshToken = new UserRefreshToken
+            {
+                ExpirationDate = DateTime.Now.AddDays(3),
+                Token = token,
+                UserId = userId,
+            };
+
+            _context.UserRefreshToken.Add(newRefreshToken);
+            await this._context.SaveChangesAsync();
+
+            return token;
+        }
+
+        public async Task<(string ErrorMessage, JwtTokenResponseDTO jwtTokenResponse)> RenewTokenAsync(RenewTokenRequestDTO renewTokenRequestDTO)
+        {
+            var existingRefreshToken = await this._context.UserRefreshToken
+                .Where(_ => _.UserId == renewTokenRequestDTO.UserId &&
+                            _.Token == renewTokenRequestDTO.RefreshToken &&
+                            _.ExpirationDate > DateTime.Now)
+                .FirstOrDefaultAsync();
+
+            if(existingRefreshToken == null)
+            {
+                return ("Invalid Refresh Token", null);
+            }
+
+            this._context.UserRefreshToken.Remove(existingRefreshToken);
+            await this._context.SaveChangesAsync();
+
+            var user = await this._context.Users.Where(_ => _.Id == renewTokenRequestDTO.UserId).FirstOrDefaultAsync();
+            
+            var jwtAccessToken = this.GenerateJwtToken(user);
+            var refreshToken = await this.GenerateRefreshToken(user.Id);
+
+            var result = new JwtTokenResponseDTO
+            {
+                AccessToken = jwtAccessToken,
+                RefreshToken = refreshToken
+            };
+            return ("", result);
         }
     }
 }

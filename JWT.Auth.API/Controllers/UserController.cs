@@ -69,5 +69,16 @@ namespace JWT.Auth.API.Controllers
                 return BadRequest(ex.Message);
             }
         }
+
+        [HttpGet("renew-tokens")]
+        public async Task<IActionResult> RenewTokenAsync(RenewTokenRequestDTO dto)
+        {
+            var result = await this._userServices.RenewTokenAsync(dto);
+            if(!string.IsNullOrEmpty(result.ErrorMessage))
+            {
+                return BadRequest(result.ErrorMessage);
+            }
+            return Ok(result.jwtTokenResponse); 
+        }
     }
 }

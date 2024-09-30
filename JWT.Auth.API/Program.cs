@@ -1,8 +1,11 @@
 using JWT.Auth.Data;
 using JWT.Auth.Models.Shared.Settings;
-using JWT.Auth.Services;
 using JWT.Auth.Services.Interfaces;
+using JWT.Auth.Services;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -27,6 +30,27 @@ builder.Services.AddCors(options =>
 
 builder.Services.Configure<TokenSettings>(builder.Configuration.GetSection(nameof(TokenSettings)));
 
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+    {
+        var tokenSettings = builder.Configuration.GetSection(nameof(TokenSettings)).Get<TokenSettings>();
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuer = true,
+            ValidIssuer = tokenSettings.Issuer,
+
+            ValidateAudience = true,
+            ValidAudience = tokenSettings.Audience,
+
+            ValidateIssuerSigningKey = true,
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(tokenSettings.SecretKey)),
+
+            ClockSkew = TimeSpan.Zero
+        };
+    });
+
+builder.Services.AddAuthorization();
+
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -45,6 +69,7 @@ app.UseHttpsRedirection();
 
 app.UseCors("CorsPolicy");
 
+app.UseAuthentication();  // Añadir esto para asegurarse que la autenticación JWT funciona correctamente
 app.UseAuthorization();
 
 app.MapControllers();
